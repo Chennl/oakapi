@@ -12,7 +12,7 @@ package com.oak.app;
         import org.springframework.http.MediaType;
         import org.springframework.http.ResponseEntity;
         import org.springframework.web.client.RestTemplate;
-        import com.oak.entity.Customer;
+        import com.oak.model.Customer;
 public class RestClientUtil {
     private HttpHeaders getHeaders() {
         String credential="mukesh:m123";

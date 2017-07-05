@@ -1,6 +1,6 @@
 package com.oak.controller;
 
-import com.oak.entity.UserInfo;
+import com.oak.model.UserInfo;
 import com.oak.service.UserService;
 import com.oak.util.CustomErrorType;
 import org.slf4j.Logger;

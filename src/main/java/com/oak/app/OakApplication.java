@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @ComponentScan(basePackages={"com.oak","com.oak.security","hello"}) // 扫描该包路径下的所有spring组件
 @EnableJpaRepositories(basePackages={"com.oak.repository","com.oak.dao"}) // JPA扫描该包路径下的Repositorie
-@EntityScan(basePackages={"com.oak.entity","com.oak.domain"}) // 扫描实体类 NorthNut
+@EntityScan(basePackages={"com.oak.model","com.oak.domain"}) // 扫描实体类 NorthNut
 @SpringBootApplication
 /*public class OakApplication  { //Classic Spring Boot JAR deployment
 	public static void main(String[] args) {

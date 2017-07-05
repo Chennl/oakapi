@@ -1,7 +1,7 @@
 package com.oak.dao;
 
 
-import com.oak.entity.UserInfo;
+import com.oak.model.UserInfo;
 
 import java.util.List;
 

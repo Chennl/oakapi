@@ -1,7 +1,7 @@
 package com.oak.service.impl;
 
 import com.oak.dao.UserInfoDAO;
-import com.oak.entity.UserInfo;
+import com.oak.model.UserInfo;
 import com.oak.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

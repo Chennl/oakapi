@@ -1,6 +1,6 @@
 package com.oak.service;
 
-import com.oak.entity.Customer;
+import com.oak.model.Customer;
 import org.springframework.security.access.annotation.Secured;
 
 import java.util.List;

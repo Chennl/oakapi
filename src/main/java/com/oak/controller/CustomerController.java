@@ -1,7 +1,7 @@
 package com.oak.controller;
 
-import com.oak.entity.Customer;
-import com.oak.entity.Employee;
+import com.oak.model.Customer;
+import com.oak.model.Employee;
 import com.oak.service.CustomerService;
 import com.oak.util.CustomErrorType;
 import org.slf4j.Logger;

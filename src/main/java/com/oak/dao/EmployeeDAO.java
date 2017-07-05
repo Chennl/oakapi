@@ -1,6 +1,6 @@
 package com.oak.dao;
 
-import com.oak.entity.Employee;
+import com.oak.model.Employee;
 
 import java.util.List;
 

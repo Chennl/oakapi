@@ -1,7 +1,7 @@
 package com.oak.service.impl;
 
 import com.oak.dao.CustomerDAO;
-import com.oak.entity.Customer;
+import com.oak.model.Customer;
 import com.oak.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

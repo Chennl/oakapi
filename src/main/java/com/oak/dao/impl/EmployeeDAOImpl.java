@@ -1,7 +1,7 @@
 package com.oak.dao.impl;
 
 import com.oak.dao.EmployeeDAO;
-import com.oak.entity.Employee;
+import com.oak.model.Employee;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

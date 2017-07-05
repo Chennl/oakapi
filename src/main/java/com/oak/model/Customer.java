@@ -1,4 +1,4 @@
-package com.oak.entity;
+package com.oak.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

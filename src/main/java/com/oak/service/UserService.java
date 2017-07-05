@@ -1,6 +1,6 @@
 package com.oak.service;
 
-import com.oak.entity.UserInfo;
+import com.oak.model.UserInfo;
 
 import java.util.List;
 

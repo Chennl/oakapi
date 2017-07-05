@@ -1,7 +1,7 @@
 package com.oak.service.impl;
 
 import com.oak.dao.EmployeeDAO;
-import com.oak.entity.Employee;
+import com.oak.model.Employee;
 import com.oak.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

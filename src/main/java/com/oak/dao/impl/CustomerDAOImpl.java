@@ -1,7 +1,7 @@
 package com.oak.dao.impl;
 
 import com.oak.dao.CustomerDAO;
-import com.oak.entity.Customer;
+import com.oak.model.Customer;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

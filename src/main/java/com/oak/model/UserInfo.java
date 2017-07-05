@@ -1,4 +1,4 @@
-package com.oak.entity;
+package com.oak.model;
 
 /**
  * Created by Chennl on 6/23/2017.
