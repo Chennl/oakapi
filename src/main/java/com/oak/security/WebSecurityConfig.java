@@ -1,7 +1,10 @@
 package com.oak.security;
 
 
+import com.oak.controller.UserController;
 import com.oak.model.Customer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
@@ -27,7 +30,7 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 @EnableOAuth2Client
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-
+    public static final Logger logger = LoggerFactory.getLogger(WebSecurityConfig.class);
     @Override
     @Bean// share AuthenticationManager for web and oauth
     public AuthenticationManager authenticationManager() throws Exception{
@@ -67,7 +70,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth)throws Exception{
         //Configure Spring security's authenticationManager with customer user details service
         auth.userDetailsService(this.userDetailsService);
-
+        logger.debug("AuthenticationManagerBuilder config");
     }
 
 //    /**
