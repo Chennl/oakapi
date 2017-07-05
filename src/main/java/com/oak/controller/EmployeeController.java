@@ -26,7 +26,7 @@ public class EmployeeController {
     private EmployeeService employeeService;//Service which will do all data retrieval/manipulation work
 
     // -------------------Retrieve All Users---------------------------------------------
-    @RequestMapping(value = "employees", method = RequestMethod.GET)
+    @RequestMapping(value = "v1/employees", method = RequestMethod.GET)
     public ResponseEntity<?> getAllEmployees()
     {
         List<Employee> user = employeeService.getAllEmployees();
@@ -36,7 +36,16 @@ public class EmployeeController {
         }
         return new ResponseEntity<List<Employee>>(user,HttpStatus.OK);
     }
-
+    @RequestMapping(value = "v2/employees", method = RequestMethod.GET)
+    public ResponseEntity<?> getAllEmployeesV2()
+    {
+        List<Employee> user = employeeService.getAllEmployees();
+        if(user.isEmpty()){
+            return new ResponseEntity(HttpStatus.NO_CONTENT);
+            // You many decide to return HttpStatus.NOT_FOUND
+        }
+        return new ResponseEntity<List<Employee>>(user,HttpStatus.OK);
+    }
     // -------------------Retrieve Single Employee------------------------------------------
 
     @RequestMapping(value="/employee/{id}",method = RequestMethod.GET)

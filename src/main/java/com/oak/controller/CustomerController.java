@@ -28,7 +28,7 @@ public class CustomerController {
 
     // -------------------Retrieve All Users---------------------------------------------
     @RequestMapping(value = "customers", method = RequestMethod.GET)
-    public ResponseEntity<?> getAllUsers()
+    public ResponseEntity<?> getAllCustomers()
     {
         List<Customer> csts = customerService.getAllCustomers();
         if(csts.isEmpty()){
