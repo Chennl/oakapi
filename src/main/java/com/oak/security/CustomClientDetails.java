@@ -165,4 +165,10 @@ public class CustomClientDetails implements ClientDetails {
     public Map<String, Object> getAdditionalInformation() {
         return Collections.unmodifiableMap(this.additionalInformation);
     }
+
+
+
+
+
+
 }
